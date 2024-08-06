@@ -1,45 +1,55 @@
-# LOLDrivers-client
-![GitHub Repo stars](https://img.shields.io/github/stars/rtfmkiesel/loldrivers-client) ![GitHub](https://img.shields.io/github/license/rtfmkiesel/loldrivers-client)
+# DriverGuard
 
-The first *blazingly fast* client for [LOLDrivers](https://github.com/magicsword-io/LOLDrivers) (Living Off The Land Drivers) by [MagicSword](https://www.magicsword.io/). Scan your computer for known vulnerable and known malicious Windows drivers.
+🚀 **DriverGuard** - The ultimate tool to swiftly scan your computer for known vulnerable and malicious Windows drivers using the power of LOLDrivers.io!
 
-![](demo.gif)
+## Overview:
 
-## Usage
-```
-Usage:
-  loldrivers-client.exe [flags]
+DriverGuard is designed to protect your system by detecting and flagging potentially dangerous drivers. Leverage the extensive LOLDrivers database to keep your computer secure with lightning-fast scans and detailed reports.
 
-Flags:
-OPERATING MODE:
-   -m, -mode string         Operating Mode {online, local, internal} (default "online")
-   -f, -driver-file string  File path to 'drivers.json', when mode == local
+## Getting Started:
 
-SCAN OPTIONS:
-   -d, -scan-dir string  Directory to scan for drivers (default: Windows driver folders)
-   -l, -scan-size int    Size limit for files to scan in MB (default 10)
-   -w, -workers int      Number of checksum "threads" to spawn (default 20)
-   -s, -surpress-errors  Do not show file read errors when calculating checksums
+### Quick Start
 
-OUTPUT OPTIONS:
-   -g, -grepable  Will only output found files for easy parsing
-   -j, -json      Format output as JSON
-```
+To start using DriverGuard, simply download the prebuilt binaries or build it from source. Choose your preferred operating mode and scan options to tailor the tool to your needs.
 
-## Installation
-### Binaries
-Download the prebuilt binaries [here](https://github.com/rtfmkiesel/loldrivers-client/releases).
+### Installation:
 
-## Build from source
-```
+#### Prebuilt Binaries
+
+Grab the latest prebuilt binaries from the [Releases](https://github.com/rtfmkiesel/loldrivers-client/releases) page and get started instantly.
+
+#### Building from Source:
+
+```sh
 git clone https://github.com/rtfmkiesel/loldrivers-client
 cd loldrivers-client
 go mod tidy
-go build -o LOLDrivers-client.exe -ldflags="-s -w" cmd/loldrivers-client/loldrivers-client.go
+go build -o DriverGuard.exe -ldflags="-s -w" cmd/loldrivers-client/loldrivers-client.go
+```
+Usage:
+```
+DriverGuard.exe [flags]
+
+Flags:
+Operating Modes:
+  -m, --mode string        Select mode: {online, local, internal} (default "online")
+  -f, --driver-file string Specify path to 'drivers.json' for local mode
+
+Scan Options:
+  -d, --scan-dir string  Directory to scan (default: Windows driver folders)
+  -l, --scan-size int    Maximum file size to scan in MB (default 10)
+  -w, --workers int      Number of checksum threads (default 20)
+  -s, --suppress-errors  Hide file read errors during checksum calculation
+
+Output Options:
+  -g, --grepable  Output only found files for easy parsing
+  -j, --json      Format output as JSON
 ```
 
-# Contributing 
-Improvements in the form of PRs are always welcome, especially as this was made during my first year of using Golang. 
+Key Features: </br>
+Multiple Operating Modes: Choose between online, local, and internal modes to fit your environment.
+Customizable Scanning: Define directories, file size limits, and the number of checksum threads for optimized performance.
+Flexible Output: Generate outputs in grepable or JSON formats for easy integration with other tools.
 
-# Legal
-This project is not affiliated with the [LOLDrivers](https://github.com/magicsword-io/LOLDrivers) repository.
+Contribution: </br>
+DriverGuard is open to enhancements and contributions. If you're passionate about Golang and security, feel free to fork the repo and submit PRs.
