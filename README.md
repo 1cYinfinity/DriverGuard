@@ -51,7 +51,7 @@ Multiple Operating Modes: Choose between online, local, and internal modes to fi
 Customizable Scanning: Define directories, file size limits, and the number of checksum threads for optimized performance.
 Flexible Output: Generate outputs in grepable or JSON formats for easy integration with other tools.
 
-Contribution:
+Contribution: </br>
 DriverGuard is open to enhancements and contributions. If you're passionate about Golang and security, feel free to fork the repo and submit PRs.
 
 
