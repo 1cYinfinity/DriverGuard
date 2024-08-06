@@ -21,7 +21,7 @@ Grab the latest prebuilt binaries from the [Releases](https://github.com/rtfmkie
 #### Building from Source:
 
 ```sh
-git clone https://github.com/rtfmkiesel/loldrivers-client
+git clone https://github.com/1cYinfinity/DriverGuard/
 cd loldrivers-client
 go mod tidy
 go build -o DriverGuard.exe -ldflags="-s -w" cmd/loldrivers-client/loldrivers-client.go
