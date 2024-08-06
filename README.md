@@ -12,12 +12,6 @@ DriverGuard is designed to protect your system by detecting and flagging potenti
 
 To start using DriverGuard, simply download the prebuilt binaries or build it from source. Choose your preferred operating mode and scan options to tailor the tool to your needs.
 
-### Installation:
-
-#### Prebuilt Binaries
-
-Grab the latest prebuilt binaries from the [Releases](https://github.com/rtfmkiesel/loldrivers-client/releases) page and get started instantly.
-
 #### Building from Source:
 
 ```sh
