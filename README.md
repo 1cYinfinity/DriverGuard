@@ -46,7 +46,7 @@ Output Options:
   -j, --json      Format output as JSON
 ```
 
-Key Features:
+Key Features: </br>
 Multiple Operating Modes: Choose between online, local, and internal modes to fit your environment.
 Customizable Scanning: Define directories, file size limits, and the number of checksum threads for optimized performance.
 Flexible Output: Generate outputs in grepable or JSON formats for easy integration with other tools.
